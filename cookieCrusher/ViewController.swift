@@ -9,12 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var countLabel: UILabel!
+    var count:Int = 100
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        countLabel.text = String(count)
     }
 
-
+    @IBAction func cookieButton(_ sender: Any) {
+        count -= 1
+        countLabel.text = String(count)
+    }
+    
 }
 
