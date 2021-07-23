@@ -15,10 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CxM-zr-Zu0">
-                                <rect key="frame" x="109" y="334.5" width="196" height="227"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="180"/>
-                                <state key="normal" title="🍪"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxM-zr-Zu0">
+                                <rect key="frame" x="192" y="431" width="30" height="34"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
                                 <connections>
                                     <action selector="cookieButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="owp-EO-GDo"/>
                                 </connections>
@@ -40,6 +41,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="cookieButton" destination="CxM-zr-Zu0" id="4YN-Y0-5aG"/>
                         <outlet property="countLabel" destination="sQ9-KQ-8f0" id="wjD-U1-ssR"/>
                     </connections>
                 </viewController>
