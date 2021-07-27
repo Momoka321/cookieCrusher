@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CookieCrusher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-xB-3fY">
-                                <rect key="frame" x="107" y="184" width="200.5" height="37"/>
+                                <rect key="frame" x="97.5" y="184" width="219" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-jn-V2h">
-                                <rect key="frame" x="166" y="418" width="82" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUZ-jn-V2h">
+                                <rect key="frame" x="165.5" y="418" width="83" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
@@ -69,7 +69,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-1s-BaB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-1s-BaB">
                                 <rect key="frame" x="236" y="801" width="143" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="スタート画面へ"/>
@@ -77,14 +77,24 @@
                                     <action selector="toStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pN-yF-UWS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0T-w4-RI3">
+                                <rect key="frame" x="215" y="755" width="164" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="カウントリセット"/>
+                                <connections>
+                                    <action selector="countReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eir-O2-Ibw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="jjS-1s-BaB" firstAttribute="top" secondItem="T0T-w4-RI3" secondAttribute="bottom" constant="10" id="AfB-pH-A1J"/>
                             <constraint firstItem="sQ9-KQ-8f0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="IqN-Ji-Edu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jjS-1s-BaB" secondAttribute="trailing" constant="35" id="Ja2-2P-DIB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jjS-1s-BaB" secondAttribute="bottom" constant="25" id="Jgu-Y0-6nf"/>
                             <constraint firstItem="CxM-zr-Zu0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZVt-B5-zWt"/>
                             <constraint firstItem="CxM-zr-Zu0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a2i-42-QS5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T0T-w4-RI3" secondAttribute="trailing" constant="35" id="oFf-Uq-Qy8"/>
                             <constraint firstItem="sQ9-KQ-8f0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vdH-aR-sID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

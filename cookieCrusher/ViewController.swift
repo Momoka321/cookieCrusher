@@ -70,6 +70,13 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "View_fig_4", sender: nil)
         }
     }
+    
+    @IBAction func countReset(_ sender: Any) {
+        count = 40
+        cookieImage = UIImage(named: "cookie1")
+        self.cookieButton.setImage(cookieImage, for: .normal)
+    }
+    
     @IBAction func toStart(_ sender: Any) {dismiss(animated: true, completion: nil)    }
 }
 
