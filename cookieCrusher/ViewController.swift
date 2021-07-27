@@ -73,6 +73,7 @@ class ViewController: UIViewController {
     
     @IBAction func countReset(_ sender: Any) {
         count = 40
+        cookieButton.isEnabled = true
         cookieImage = UIImage(named: "cookie1")
         self.cookieButton.setImage(cookieImage, for: .normal)
     }
