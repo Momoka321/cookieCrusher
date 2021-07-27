@@ -49,6 +49,6 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "View_fig_4", sender: nil)
         }
     }
-    
+    @IBAction func toStart(_ sender: Any) {dismiss(animated: true, completion: nil)    }
 }
 
