@@ -30,10 +30,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func cookieButton(_ sender: Any) {
+        //let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        //let viewControllor_1 = storyboard.instantiateViewController(withIdentifier: "View_fig_1") as! UINavigationController
+        
         count -= 1
         countLabel.text = String(count)
+        if (count == 30){
+            self.performSegue(withIdentifier: "View_fig_1", sender: nil)
+        }
+        if (count == 20){
+            self.performSegue(withIdentifier: "View_fig_2", sender: nil)
+        }
+        if (count == 10){
+            self.performSegue(withIdentifier: "View_fig_3", sender: nil)
+        }
         if (count == 0) {
             cookieButton.isEnabled = false
+            self.performSegue(withIdentifier: "View_fig_4", sender: nil)
         }
     }
     
