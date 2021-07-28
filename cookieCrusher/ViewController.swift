@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         self.cookieButton.contentVerticalAlignment = .fill
         self.cookieButton.imageEdgeInsets = UIEdgeInsets(top: 400, left: 400, bottom: 400, right: 400)
         self.cookieButton.setImage(cookieImage, for: .normal)
+        
+        self.cookieButton.adjustsImageWhenDisabled = false
     }
     
     func assignBackground() {
@@ -65,6 +67,7 @@ class ViewController: UIViewController {
         }
         if (count == 0) {
             cookieImage = UIImage(named: "cookie5")
+            self.cookieButton.imageEdgeInsets = UIEdgeInsets(top: 80, left: 80, bottom: 80, right: 80)
             self.cookieButton.setImage(cookieImage, for: .normal)
             cookieButton.isEnabled = false
             self.performSegue(withIdentifier: "View_fig_4", sender: nil)
@@ -73,6 +76,8 @@ class ViewController: UIViewController {
     
     @IBAction func countReset(_ sender: Any) {
         count = 40
+        cookieButton.isEnabled = true
+        self.cookieButton.imageEdgeInsets = UIEdgeInsets(top: 400, left: 400, bottom: 400, right: 400)
         cookieImage = UIImage(named: "cookie1")
         self.cookieButton.setImage(cookieImage, for: .normal)
     }
