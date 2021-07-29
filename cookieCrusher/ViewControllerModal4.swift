@@ -1,48 +1,42 @@
 //
-//  ViewControllerModal1.swift
+//  ViewControllerModal4.swift
 //  cookieCrusher
 //
-//  Created by 加藤慎融 on 2021/07/27.
+//  Created by 加藤慎融 on 2021/07/30.
 //  Copyright © 2021 kashiharaLab. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerModal1: UIViewController {
+class ViewControllerModal4: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         assignBackground()
+
         // Do any additional setup after loading the view.
     }
     
-    
-    
     func assignBackground() {
-        let background = UIImage(named: "monster")
-        var imageView : UIImageView
-        imageView = UIImageView(frame: view.bounds)
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        imageView.image = background
-        imageView.center = view.center
-        view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
-    }
+            let background = UIImage(named: "kumiko")
+            var imageView : UIImageView
+            imageView = UIImageView(frame: view.bounds)
+            imageView.contentMode = .scaleAspectFill
+            imageView.clipsToBounds = true
+            imageView.image = background
+            imageView.center = view.center
+            view.addSubview(imageView)
+            self.view.sendSubviewToBack(imageView)
+        }
     
-    
-    @IBAction func buttonAction1(_ sender: Any) {
+    @IBAction func buttonAction4(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func startButton1(_ sender: Any) {
+    @IBAction func startButton4(_ sender: Any) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
+
     /*
     // MARK: - Navigation
 
